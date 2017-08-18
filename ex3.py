@@ -22,7 +22,7 @@ def get_http_header(url, header_name):
         
         if response.info().get(header_name):
             return None
-
+            
     except ConnectionError:
         print('Connection Error')
     except UnknownError: 
